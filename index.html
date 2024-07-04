@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Restaurant</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Restaurant</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link filter-button" href="#" data-filter="all">All</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link filter-button" href="#" data-filter="starters">Starters</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link filter-button" href="#" data-filter="mains">Mains</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link filter-button" href="#" data-filter="desserts">Desserts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link filter-button" href="#" data-filter="beverages">Beverages</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" id="search-input">
+            </form>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="video-banner">
+        <video src="https://files.codingninjas.in/restaurant-1706081051.mp4" autoplay loop muted></video>
+    </div>
+
+    <!-- Menu items -->
+    <div class="container mt-4">
+        <div class="row" id="menu-items">
+            <!-- Items will be inserted here by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Menu items will be inserted here by JavaScript -->
+    <div class="container mt-4">
+        <div class="row" id="menu-items">
+            <!-- Dynamic content will be loaded here -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
